@@ -7,8 +7,8 @@ apply from: 'gradle-maven-push.gradle'
 
 android {
   compileSdkVersion safeExtGet('compileSdkVersion', 26)
-  buildToolsVersion safeExtGet('buildToolsVersion', '26.0.3')
-  publishNonDefault true
+    buildToolsVersion = '28.0.3'
+    publishNonDefault true
 
   defaultConfig {
     minSdkVersion safeExtGet('minSdkVersion', 16)
